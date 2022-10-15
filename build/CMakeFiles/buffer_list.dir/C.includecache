@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/taihua.chen/projs/projs@github/buffer_list/src/buffer_list.h
+pthread.h
+-
+
+/home/taihua.chen/projs/projs@github/buffer_list/src/main.c
+stdio.h
+-
+buffer_list.h
+/home/taihua.chen/projs/projs@github/buffer_list/src/buffer_list.h
+
