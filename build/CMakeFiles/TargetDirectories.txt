@@ -1,3 +1,0 @@
-/home/taihua.chen/projs/projs@github/buffer_list/build/CMakeFiles/rebuild_cache.dir
-/home/taihua.chen/projs/projs@github/buffer_list/build/CMakeFiles/edit_cache.dir
-/home/taihua.chen/projs/projs@github/buffer_list/build/CMakeFiles/test.dir

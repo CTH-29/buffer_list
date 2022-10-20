@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/buffer_list.dir/src/buffer_list.c.o CMakeFiles/buffer_list.dir/src/main.c.o -o ../buffer_list 

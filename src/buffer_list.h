@@ -25,16 +25,24 @@ typedef struct buffer_list
     pthread_mutex_t mutex;
 } buffer_list_t;
 
-void buffer_list_init(buffer_list_t *buflist);
-int buffer_list_push(buffer_list_t *buflist, const void *data, int len);
-int buffer_list_push_at(buffer_list_t *buflist, int index, const void *data, int len);
-int buffer_list_pop(buffer_list_t *buflist, void *data, int *len);
-int buffer_list_pop_at(buffer_list_t *buflist, int index, void *data, int *len);
-int buffer_list_peek(buffer_list_t *buflist, void *data, int *len);
-int buffer_list_peek_at(buffer_list_t *buflist, int index, void *data, int *len);
-int buffer_list_clear(buffer_list_t *buflist);
-int buffer_list_total(buffer_list_t *buflist);
+void bl_init(buffer_list_t *bl);
+int bl_push(buffer_list_t *bl, const void *data, int len);
+int bl_push_at(buffer_list_t *bl, int index, const void *data, int len);
+int bl_pop(buffer_list_t *bl, void *data, int *len);
+int bl_pop_at(buffer_list_t *bl, int index, void *data, int *len);
+int bl_peek(buffer_list_t *bl, void *data, int *len);
+int bl_peek_at(buffer_list_t *bl, int index, void *data, int *len);
 
-int buffer_list_dump(buffer_list_t *buflist);
+int bl_push2(buffer_list_t *bl, void *data, int len);
+int bl_push2_at(buffer_list_t *bl, int index, void *data, int len);
+int bl_pop2(buffer_list_t *bl, void **data, int *len);
+int bl_pop2_at(buffer_list_t *bl, int index, void **data, int *len);
+int bl_peek2(buffer_list_t *bl, void **data, int *len);
+int bl_peek2_at(buffer_list_t *bl, int index, void **data, int *len);
+
+int bl_clear(buffer_list_t *bl);
+int bl_total(buffer_list_t *bl);
+
+int bl_dump(buffer_list_t *bl);
 
 #endif
